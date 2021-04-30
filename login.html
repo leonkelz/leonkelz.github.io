@@ -1,0 +1,32 @@
+ <div class="wrapper">
+            <form class="form1" action="https://youtube.com">
+                <div class="formtitle">
+                    Bitte geben sie das Passwort ein
+                </div>
+
+                <div class="input nobottomborder">
+                    <div class="inputtext">
+                        Password:
+                    </div>
+
+                    <div class="inputcontent">
+                        <input type="password" id="password" /><br />
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <input class="orangebutton" type="button" value="Login" onclick="checkPassword()" />
+                </div>
+            </form>
+        </div>
+
+       <script>
+      function checkPassword(){
+       if(document.getElementById('password').value == 'vierkekse'){
+          location.href = "index_login.html";
+         } else {
+         alert('Falsches Passwort!');
+          return false;
+        }
+       }
+      </script>
